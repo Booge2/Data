@@ -231,14 +231,14 @@ def main():
             print("Вміст списку:")
             dll.display()
         elif choice == "4":
-            value = input("Введіть значення для перевірки: ")
+            value = int(input("Введіть значення для перевірки: "))
             if dll.contains(value):
                 print(f"Значення {value} присутнє у списку.")
             else:
                 print(f"Значення {value} відсутнє у списку.")
         elif choice == "5":
-            old_value = input("Введіть значення, яке потрібно замінити: ")
-            new_value = input("Введіть нове значення: ")
+            old_value = int(input("Введіть значення, яке потрібно замінити: "))
+            new_value = int(input("Введіть нове значення: "))
             dll.replace(old_value, new_value)
             print(f"Значення {old_value} було замінено на {new_value}.")
         elif choice == "6":
